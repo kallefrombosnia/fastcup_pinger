@@ -11,6 +11,8 @@ func main() {
 	// Print welcome messages
 	root.Welcome()
 
+	fmt.Println("Try to load regions...\n\r")
+
 	// Check if we have remotes file
 	if !root.CheckForFile() {
 
@@ -20,8 +22,6 @@ func main() {
 		fmt.Println("Downloading regions.json \n\r")
 	}
 
-	fmt.Println("Try to load regions...\n\r")
+	root.Init()
 
-	regions := root.GetRegions()
-	
 }

@@ -3,7 +3,7 @@
         "Socket": "thr.gameflare.io",
         "RegionName": "Teheran",
         "Game": "both",
-        "Disabled": false
+        "Disabled": true
     },
     {
         "Socket": "tlv.gameflare.io",
