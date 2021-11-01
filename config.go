@@ -1,6 +1,7 @@
-package root
+package main
 
 import (
+	"encoding/json"
 	"errors"
 	"io"
 	"log"
@@ -8,6 +9,38 @@ import (
 	"os"
 	"path"
 )
+
+type Region struct {
+	Socket   string
+	Region   string
+	Game     string
+	Disabled bool
+}
+
+func GetRegions() []Region {
+
+	var regions []Region
+
+	filepath, err := GetRegionsFile()
+
+	if err != nil {
+		log.Fatal("Couldn't load regions.json")
+	}
+
+	regionsFile, err := os.Open(filepath)
+
+	defer regionsFile.Close()
+
+	if err != nil {
+		log.Fatal(err.Error())
+	}
+
+	jsonParser := json.NewDecoder(regionsFile)
+
+	jsonParser.Decode(&regions)
+
+	return regions
+}
 
 // Define remote file
 var remotefile = "https://raw.githubusercontent.com/kallefrombosnia/fc_pinger/master/root/regions.json"
@@ -20,7 +53,7 @@ func GetRegionsFile() (string, error) {
 		return "", err
 	}
 
-	return path.Join(cwd, "/root/regions.json"), nil
+	return path.Join(cwd, "/pinger/regions.json"), nil
 }
 
 func DownloadRegions() {
