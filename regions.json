@@ -1,0 +1,259 @@
+[
+    {
+        "Socket": "thr.gameflare.io",
+        "RegionName": "Teheran",
+        "Game": "both",
+        "Disabled": true
+    },
+    {
+        "Socket": "tlv.gameflare.io",
+        "RegionName": "Tel Aviv",
+        "Game": "both",
+        "Disabled": false
+    },
+    {
+        "Socket": "ist2.gameflare.io",
+        "RegionName": "Istanbul 2",
+        "Game": "both",
+        "Disabled": true
+    },
+    {
+        "Socket": "ist.gameflare.io",
+        "RegionName": "Istanbul 1",
+        "Game": "both",
+        "Disabled": false
+    },    {
+        "Socket": "bak.gameflare.io",
+        "RegionName": "Baku",
+        "Game": "both",
+        "Disabled": false
+    },    
+    {
+        "Socket": "msq.gameflare.io",
+        "RegionName": "Minsk",
+        "Game": "both",
+        "Disabled": false
+    },    
+    {
+        "Socket": "old-msq.gameflare.io",
+        "RegionName": "Minsk old",
+        "Game": "both",
+        "Disabled": true
+    },    
+    {
+        "Socket": "iev.gameflare.io",
+        "RegionName": "Kyiv",
+        "Game": "both",
+        "Disabled": false
+    },    
+    {
+        "Socket": "bud.gameflare.io",
+        "RegionName": "Budapest",
+        "Game": "both",
+        "Disabled": false
+    },    
+    {
+        "Socket": "sof.gameflare.io",
+        "RegionName": "Sofia",
+        "Game": "both",
+        "Disabled": true
+    },    
+    {
+        "Socket": "waw.gameflare.io",
+        "RegionName": "Warsaw",
+        "Game": "both",
+        "Disabled": false
+    },    
+    {
+        "Socket": "buh.gameflare.io",
+        "RegionName": "Bucharest",
+        "Game": "both",
+        "Disabled": false
+    },    
+    {
+        "Socket": "mum.gameflare.io",
+        "RegionName": "Mumbai",
+        "Game": "both",
+        "Disabled": true
+    },    
+    {
+        "Socket": "ala.gameflare.io",
+        "RegionName": "Almaty",
+        "Game": "both",
+        "Disabled": false
+    },    
+    {
+        "Socket": "tse.gameflare.io",
+        "RegionName": "Nur - Sultan",
+        "Game": "both",
+        "Disabled": false
+    },    
+    {
+        "Socket": "fru.gameflare.io",
+        "RegionName": "Bishkek",
+        "Game": "both",
+        "Disabled": true
+    },    
+    {
+        "Socket": "sgp.gameflare.io",
+        "RegionName": "Singapore",
+        "Game": "both",
+        "Disabled": false
+    },    
+    {
+        "Socket": "kha.gameflare.io",
+        "RegionName": "Khabarovsk",
+        "Game": "both",
+        "Disabled": false
+    },    
+    {
+        "Socket": "nsk.gameflare.io",
+        "RegionName": "Novosibirsk",
+        "Game": "both",
+        "Disabled": false
+    },    
+    {
+        "Socket": "msk-old.gameflare.io",
+        "RegionName": "Moscow",
+        "Game": "both",
+        "Disabled": true
+    },    
+    {
+        "Socket": "msk.gameflare.io",
+        "RegionName": "Moscow",
+        "Game": "both",
+        "Disabled": false
+    },    
+    {
+        "Socket": "svx.gameflare.io",
+        "RegionName": "Yekaterinburg",
+        "Game": "both",
+        "Disabled": false
+    },    
+    {
+        "Socket": "kja.gameflare.io",
+        "RegionName": "Krasnoyarsk",
+        "Game": "both",
+        "Disabled": false
+    },    
+    {
+        "Socket": "mad.gameflare.io",
+        "RegionName": "Madrid",
+        "Game": "both",
+        "Disabled": false
+    },    
+    {
+        "Socket": "eri.gameflare.io",
+        "RegionName": "London",
+        "Game": "both",
+        "Disabled": false
+    },    
+    {
+        "Socket": "sto.gameflare.io",
+        "RegionName": "Stockholm",
+        "Game": "both",
+        "Disabled": false
+    },    
+    {
+        "Socket": "ams.gameflare.io",
+        "RegionName": "Amsterdam",
+        "Game": "both",
+        "Disabled": true
+    },    
+    {
+        "Socket": "lim.gameflare.io",
+        "RegionName": "Frankfurt am Main",
+        "Game": "both",
+        "Disabled": false
+    },    
+    {
+        "Socket": "lux.gameflare.io",
+        "RegionName": "Luxembourg",
+        "Game": "both",
+        "Disabled": true
+    },    
+    {
+        "Socket": "sbg.gameflare.io",
+        "RegionName": "Strasbourg",
+        "Game": "both",
+        "Disabled": true
+    },    
+    {
+        "Socket": "gra.gameflare.io",
+        "RegionName": "Gravelines",
+        "Game": "both",
+        "Disabled": true
+    },    
+    {
+        "Socket": "par.gameflare.io",
+        "RegionName": "Paris",
+        "Game": "both",
+        "Disabled": true
+    },    
+    {
+        "Socket": "pmo.gameflare.io",
+        "RegionName": "Palermo",
+        "Game": "both",
+        "Disabled": true
+    },    
+    {
+        "Socket": "mil.gameflare.io",
+        "RegionName": "Milan",
+        "Game": "both",
+        "Disabled": true
+    },    
+    {
+        "Socket": "sao.gameflare.io",
+        "RegionName": "Sau Paolo",
+        "Game": "both",
+        "Disabled": false
+    },    
+    {
+        "Socket": "bue.gameflare.io",
+        "RegionName": "Buenos Aires",
+        "Game": "both",
+        "Disabled": true
+    },    
+    {
+        "Socket": "scl.gameflare.io",
+        "RegionName": "Santiago",
+        "Game": "both",
+        "Disabled": false
+    },    
+    {
+        "Socket": "bhs.gameflare.io",
+        "RegionName": "Beauharnois",
+        "Game": "both",
+        "Disabled": true
+    },    
+    {
+        "Socket": "san.gameflare.io",
+        "RegionName": "Santa Clara",
+        "Game": "both",
+        "Disabled": true
+    },    
+    {
+        "Socket": "chi.gameflare.io",
+        "RegionName": "Chicago",
+        "Game": "both",
+        "Disabled": false
+    },    
+    {
+        "Socket": "ash.gameflare.io",
+        "RegionName": "Ashburn",
+        "Game": "both",
+        "Disabled": true
+    },    
+    {
+        "Socket": "beg2.gameflare.io",
+        "RegionName": "Belgrade",
+        "Game": "both",
+        "Disabled": true
+    },    
+    {
+        "Socket": "beg.gameflare.io",
+        "RegionName": "Belgrade",
+        "Game": "both",
+        "Disabled": true
+    }
+]
