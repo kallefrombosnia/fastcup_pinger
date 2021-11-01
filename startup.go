@@ -1,10 +1,10 @@
-package root
+package main
 
 import (
 	"fmt"
 )
 
-func Welcome() {
+func Startup() {
 
 	fmt.Println("=======================================")
 	fmt.Println("          FASTCUP.net Pinger           ")
