@@ -146,7 +146,7 @@
         "Socket": "eri.gameflare.io",
         "RegionName": "London",
         "Game": "both",
-        "Disabled": false
+        "Disabled": true
     },    
     {
         "Socket": "sto.gameflare.io",

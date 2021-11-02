@@ -11,10 +11,10 @@ import (
 )
 
 type Region struct {
-	Socket   string
-	Region   string
-	Game     string
-	Disabled bool
+	Socket     string
+	RegionName string
+	Game       string
+	Disabled   bool
 }
 
 func GetRegions() []Region {
@@ -53,7 +53,7 @@ func GetRegionsFile() (string, error) {
 		return "", err
 	}
 
-	return path.Join(cwd, "/pinger/regions.json"), nil
+	return path.Join(cwd, "/regions.json"), nil
 }
 
 func DownloadRegions() {

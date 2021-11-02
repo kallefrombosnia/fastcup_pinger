@@ -42,7 +42,6 @@ func (p Pinger) ping(host string) {
 		"sec-gpc": []string{"1"},
 	}
 
-	fmt.Println("Connecting to ", u.String())
 	c, _, err := websocket.DefaultDialer.Dial(u.String(), headers)
 
 	if err != nil {
@@ -108,14 +107,4 @@ func (p Pinger) Start() {
 		}
 	}()
 
-	go func() {
-		for {
-			select {
-			case msg := <-p.ResponseChan:
-				fmt.Println(msg)
-			}
-		}
-	}()
-
-	<-p.DoneChan
 }

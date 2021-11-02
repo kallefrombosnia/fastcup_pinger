@@ -14,5 +14,7 @@ func Startup() {
 }
 
 func credits() {
-	fmt.Println("Written by kalle\n\r")
+	fmt.Println("Written by kalle")
+	fmt.Println("github.com/kallefrombosnia/fastcup_pinger")
+	fmt.Println("\u2665 FASTCUP\n\r")
 }

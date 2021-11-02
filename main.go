@@ -2,7 +2,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/kallefrombosnia/fc_pinger/pinger"
+
+	"github.com/kallefrombosnia/fastcup_pinger/draw"
+	"github.com/kallefrombosnia/fastcup_pinger/pinger"
 )
 
 func main() {
@@ -26,12 +28,15 @@ func main() {
 
 	// Filter disabled hosts
 	var hosts []string
+	var regionsw []string
+
 	for _, region := range regions {
 		if region.Disabled {
 			continue
 		}
 
 		hosts = append(hosts, region.Socket)
+		regionsw = append(regionsw, region.RegionName)
 	}
 
 	// Create new pinger
@@ -40,5 +45,18 @@ func main() {
 	// Start pinger
 	p.Start()
 
-	fmt.Println("program end")
+	r := draw.NewResults(hosts, regionsw)
+
+	func() {
+		for {
+			select {
+			case msg := <-p.ResponseChan:
+				r.CallClear()
+				Startup()
+				r.ProcessResponse(msg)
+				r.PrintResponse()
+			}
+		}
+	}()
+
 }
