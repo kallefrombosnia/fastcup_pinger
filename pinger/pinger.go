@@ -101,10 +101,10 @@ func (p Pinger) ping(host string) {
 
 func (p Pinger) Start() {
 
-	go func() {
-		for _, host := range p.Hosts {
-			p.ping(host)
-		}
-	}()
+	fmt.Println(p.Hosts)
+
+	for _, host := range p.Hosts {
+		p.ping(host)
+	}
 
 }

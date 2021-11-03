@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"errors"
+	"fmt"
 	"io"
 	"log"
 	"net/http"
@@ -43,7 +44,7 @@ func GetRegions() []Region {
 }
 
 // Define remote file
-var remotefile = "https://raw.githubusercontent.com/kallefrombosnia/fc_pinger/master/root/regions.json"
+var remotefile = "https://raw.githubusercontent.com/kallefrombosnia/fc_pinger/master/regions.json"
 
 func GetRegionsFile() (string, error) {
 
@@ -59,6 +60,8 @@ func GetRegionsFile() (string, error) {
 func DownloadRegions() {
 
 	filepath, err := GetRegionsFile()
+
+	fmt.Println(filepath)
 
 	if err != nil {
 		log.Fatal("Cant get filepath.")
@@ -83,6 +86,10 @@ func DownloadRegions() {
 	io.Copy(file, resp.Body)
 
 	defer file.Close()
+
+	fmt.Println("Relaunch me please.")
+
+	os.Exit(3)
 
 }
 

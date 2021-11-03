@@ -17,10 +17,10 @@ func main() {
 	// Check if we have remotes file
 	if !CheckForFile() {
 
+		fmt.Println("Downloading regions.json \n\r")
+
 		// If doesn exists download file from github
 		DownloadRegions()
-
-		fmt.Println("Downloading regions.json \n\r")
 	}
 
 	// Get all regions from config
