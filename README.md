@@ -16,8 +16,7 @@ Currently my first Golang program, so for learning purposes.
 Just launch .exe program 
 
 Download is provided in the Release part of the repo.
-
-If you need other distros, feel free to compile it.
+Most of the distros are supported and already compiled.
 
 
 ## License
